@@ -1,0 +1,129 @@
+/*Desktop - Responsvidade*/
+:root{
+    --red-cmyk: #e51e25ff;
+    --pigment-green: #34a14eff;
+    --orange-wheel: #ec7e20ff;
+    --yinmn-blue: #3d509eff;
+    --sky-magenta: #d25aa4ff;
+    --tiffany-blue: #81d7d9ff;
+    --black: #000000ff;
+    --baby-powder: #fbf9f4ff;
+    --thulian-pink: #ec67a6ff;
+    --chocolate-cosmos: #59191bff;
+    --oxford-blue-2: #000024ff;
+}
+
+@font-face {
+    font-family:king;
+    src: url('/amongus/images/king.otf');
+}
+
+body{
+
+    background: radial-gradient(var(--chocolate-cosmos), var(--baby-powder));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--chocolate-cosmos)
+}
+
+.central{
+
+    background: var(--baby-powder);
+    width: 40%;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 15px var(--oxford-blue-2);
+}
+
+hr{
+    width: 100%;
+    height: 12px;
+    background-color: var(--chocolate-cosmos);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: king;
+    font-size: 55px;
+    margin: 0;
+    font-weight: 100;
+}
+
+
+.rede{
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+.img2{
+    width: 100px; 
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.img1{
+
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 40px;
+}
+
+.texto{
+
+font-size: 20px;
+padding: 10px;
+  
+}
+
+.texto2{
+
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*Tablet - Responsividade*/
+
+@media(max-width:1024px) and (min-width: 720px){
+
+    body{
+        background: var(--orange-wheel);
+        .central{
+            width: 50%;
+        }
+    }
+}
+
+/*mobile - Responsividade*/
+
+@media(max-width:720px){
+
+    body{
+        background: var(--black);
+    }
+    .central{
+        width: 70%;
+    }
+}
